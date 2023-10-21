@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+</head>
+<body>
+    <input type="number" id="ip1" placeholder="Enter 1st Number">
+    <input type="number" id="ip2" placeholder="Enter 2nd Number">
+    <br>
+
+
+    <br>
+    <button id="ad" onclick="add()">Add</button>
+    <button id="sub" onclick="subb()">Subtract</button>
+    <button id="mul" onclick="mull()">Multiply</button>
+    <button id="div" onclick="divv()">Divide</button>
+</body>
+</html>
+
+<script>
+
+    let inp1 = document.getElementById("ip1");
+    let inp2 = document.getElementById("ip2");
+    let ans = "Ans";
+
+    function add()
+    {
+        let addvalue = parseInt(inp1.value) + parseInt(inp2.value)
+        alert(ans +" : "+ addvalue)
+    }
+
+    function subb()
+    {
+        let subvalue = parseInt(inp1.value) - parseInt(inp2.value)
+        alert(ans +" : "+subvalue)
+    }
+
+    
+    function mull()
+    {
+        let mulvalue = parseInt(inp1.value) * parseInt(inp2.value)
+        alert(ans +" : "+mulvalue)
+    }
+
+    
+    function divv()
+    {
+        let divvalue = parseInt(inp1.value) / parseInt(inp2.value)
+        alert(ans +" : "+divvalue)
+    }
+</script>

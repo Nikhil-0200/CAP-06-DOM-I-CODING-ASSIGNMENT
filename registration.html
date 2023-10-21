@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<input type="text" id="name" placeholder="Enter Name">
+	<select id="gender">
+		<option value="">--</option>
+		<option value="male">M</option>
+		<option value="female">F</option>
+	</select>
+	<input type="text" placeholder="Enter E-Mail Id" id="email">
+	<input type="text" placeholder="Enter Mobile No." id="mobile">
+	<hr>
+	<h1 id="dName">NAME</h1>
+	<h2 id="dGender">GENDER</h2>
+	<h3 id="dEmail">EMAIL</h3>
+	<h4 id="dMobile">MOBILE</h4>
+	<hr>
+	<button onclick="showName()">NAME</button>
+	<button onclick="showGender()">GENDER</button>
+	<button onclick="showEmail()">EMAIL</button>
+	<button onclick="showMobile()">MOBILE</button>
+	<button onclick="resetForm()">RESET FORM</button>
+	<button onclick="resetDisplay()">RESET DISPLAY</button>
+	<script type="text/javascript">
+        let oldname = document.getElementById("dName");
+        let newname = document.getElementById("name");
+		function showName() {
+            oldname.innerText = newname.value
+            console.log(oldname)
+		}
+
+        let oldgen = document.getElementById("dGender");
+        let newgen = document.getElementById("gender")
+		function showGender() {
+			oldgen.innerText = newgen.value
+            console.log(oldgen)
+		}
+
+        let oldmail = document.getElementById("dEmail");
+        let newmail = document.getElementById("email")
+		function showEmail() {
+			oldmail.innerText = newmail.value
+            console.log(oldmail)
+
+		}
+        let oldMob = document.getElementById("dMobile");
+        let newMob = document.getElementById("mobile");
+		function showMobile() {
+			oldMob.innerText = newMob.value
+            console.log(oldMob)
+
+		}
+
+		function resetForm() {
+            newname.value = "";
+            console.log(newname) 
+            newgen.value = "";
+            console.log(newgen)
+            newMob.value = "";
+            console.log(newMob) 
+            newmail.value = "";
+            console.log(newmail)
+
+		}
+
+		function resetDisplay() {
+            oldname.innerText = "";
+            console.log(oldname) 
+            oldgen.innerText = "";
+            console.log(oldgen)
+            oldMob.innerText = "";
+            console.log(oldMob) 
+            oldmail.innerText = "";
+            console.log(oldmail)
+
+		}
+	</script>
+</body>
+</html>
